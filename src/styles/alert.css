@@ -1,0 +1,32 @@
+.show, .fade-out{
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.show{
+    animation: fadeIn 0.8s linear;
+}
+.fade-out{
+    animation: fadeOut 0.8s linear;
+    display: none;
+}
+.alert{
+    background-color: white;
+    padding: 5px 25px;
+    border-radius: 0.4rem;
+}
+.success{
+    border-left: 15px solid green;
+}
+.error{
+    border-left: 15px solid red;
+}
+
+@keyframes fadeOut{
+    0%{display: flex;opacity: 1;}100%{opacity: 0;display: none;}
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}100%{opacity: 1;}
+}

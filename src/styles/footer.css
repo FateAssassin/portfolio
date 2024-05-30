@@ -1,0 +1,26 @@
+footer{
+    background-color: rgba(102, 102, 102, 0.4);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+footer a:hover{
+    color: rgb(5, 113, 237);
+}
+footer a:active{
+    color: rgb(5, 113, 237, 0.6);
+}
+@media screen and (max-width: 768px){
+    footer{
+        display: none;
+    }
+}
