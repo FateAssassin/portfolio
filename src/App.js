@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 
+import { Analytics } from "@vercel/analytics/react"
 import About from './components/about';
 import Contact from './components/contact';
 import NotFound from './components/notfound';
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Analytics/>
       <Headers />
         <Routes>
           <Route path='/' element={<About />} />
