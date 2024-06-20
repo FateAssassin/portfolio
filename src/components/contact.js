@@ -71,7 +71,7 @@ export default function Contact() {
         <>
             { alertElement === "success" ? <Alert message='Message sent successfully!' type='success' /> : ""}
             { alertElement === "error" ? <Alert message='An error occured, please try again later!' type='error' /> : ""}
-            <div className="contact appearanimate">
+            <div className="contact center appearanimate">
                 <div className='contact-content'>
                     <div className="contact-headers">
                         <div 
