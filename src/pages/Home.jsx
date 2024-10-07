@@ -7,7 +7,7 @@ export default function Home() {
             
             <div className="absolute inset-0 bg-gray-100 dark:bg-gray-900 z-0 md:hidden"></div>
             
-            <div className="absolute inset-0 bg-[url('.\\assets\\responsive.svg')] bg-center bg-no-repeat bg-cover opacity-10 z-0 md:hidden"></div>
+            <div className="absolute inset-0 bg-[url('.//assets//responsive.svg')] bg-center bg-no-repeat bg-cover opacity-10 z-0 md:hidden"></div>
 
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-[90%]">
                 <section className="leading-loose text-center md:text-left px-6 md:px-10 md:bg-none backdrop-blur-lg bg-white/30 dark:bg-gray-800/30 border border-white/20 rounded-lg p-8 shadow-lg md:shadow-none md:backdrop-blur-none md:bg-transparent md:dark:bg-transparent md:border-none">
