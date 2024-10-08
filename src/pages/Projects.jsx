@@ -89,8 +89,8 @@ const Projects = () => {
             shortDescription:
                 'A selfmade To-Do List App using React and local storage.',
             image: todo,
-            buttonText: 'View Repository',
-            repoLink: 'https://github.com/fateassassin/todo-app',
+            buttonText: 'View Project',
+            repoLink: 'https://to-do-app-ten-beige.vercel.app/',
         },
         {
             name: 'Reconnect',
