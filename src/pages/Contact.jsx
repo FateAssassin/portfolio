@@ -1,4 +1,4 @@
-import { useForm } from "react-hook-form";
+import { set, useForm} from "react-hook-form";
 import { useEffect, useState } from "react";
 import Alert from "./Alert";
 
@@ -6,7 +6,7 @@ export default function Contact() {
 
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors }, setValue } = useForm();
 
     const onSubmit = async (data) => {
         const webhookUrl = "https://discord.com/api/webhooks/1209632042585686106/WDI21cthzB4NDhewMIgL3kzuIXszNrSou8s4__taB2HUC-lDxU2igVQaym8E5ByBxLNm";
@@ -44,9 +44,15 @@ export default function Contact() {
                 body: JSON.stringify(payload)
             });
             setSuccess(true);
+            setValue("name", "");
+            setValue("email", "");
+            setValue("message", "");
         } catch (error) {
             console.error("Error sending message:", error);
             setError(true);
+            setValue("name", "");
+            setValue("email", "");
+            setValue("message", "");
         }
     };
 
