@@ -114,7 +114,7 @@ const Projects = () => {
     const [selectedProject, setSelectedProject] = useState(null);
 
     return (
-        <div className="min-h-screen flex justify-center items-center py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen flex justify-center items-center py-12 px-4 sm:px-6 lg:px-8 fadeIn">
             <div className="max-w-7xl">
                 <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (

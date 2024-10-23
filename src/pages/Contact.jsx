@@ -70,7 +70,7 @@ export default function Contact() {
     }, [success, error]);
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen w-screen">
+        <div className="flex flex-col items-center justify-center h-screen w-screen fadeIn">
             {success && <Alert success />}
             {error && <Alert error />}
             <div className="flex flex-col shadow-xl py-8 rounded-lg max-w-2xl w-full dark:bg-gray-800 justify-between">
