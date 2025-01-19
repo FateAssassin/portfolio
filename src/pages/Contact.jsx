@@ -9,7 +9,7 @@ export default function Contact() {
     const { register, handleSubmit, formState: { errors }, setValue } = useForm();
 
     const onSubmit = async (data) => {
-        const webhookUrl = "https://discord.com/api/webhooks/1209632042585686106/WDI21cthzB4NDhewMIgL3kzuIXszNrSou8s4__taB2HUC-lDxU2igVQaym8E5ByBxLNm";
+        const webhookUrl = "https://discord.com/api/webhooks/1330494386756386897/nEUP9AsSnWBOiZJOIzW-8qq9D5jzDf3tqugsPrqMHCCDa4hIxARkKB2kNX5AsVojs1BX";
 
         const payload = {
             content: "<@452570376577220608>", 
