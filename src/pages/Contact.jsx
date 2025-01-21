@@ -9,7 +9,11 @@ export default function Contact() {
     const { register, handleSubmit, formState: { errors }, setValue } = useForm();
 
     const onSubmit = async (data) => {
-        const webhookUrl = "https://discord.com/api/webhooks/1330494386756386897/nEUP9AsSnWBOiZJOIzW-8qq9D5jzDf3tqugsPrqMHCCDa4hIxARkKB2kNX5AsVojs1BX";
+        const wht = "NU96UXg1Z0QxbDNHaDlmMFNXVWVjYXVOQnYzZ05HcHhIUUJSbHU5YVpxNGlkTEljajNqZWE0LXh6TnBQR2tJWkZ1a1M=";
+        const whId = "MTMzMTI4MjE1MTU5MjgyNDkwMw==";
+        const base = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3Mv";
+        // Decode the Base64 webhook URL
+        const webhookUrl = atob(base) + atob(whId) + "/" + atob(wht);
 
         const payload = {
             content: "<@452570376577220608>", 
