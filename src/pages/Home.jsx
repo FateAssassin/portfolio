@@ -16,7 +16,7 @@ export default function Home() {
                         <h2 className="mb-6 text-xl md:text-3xl font-medium">Developer & Freelancer</h2>
                     </header>
                     <p className="mb-6 text-sm md:text-base">
-                        Aspiring 19-year-old developer and student based in Austria, Tyrol, <br />
+                        Aspiring 19-year-old developer and student based in Austria, Innsbruck,<br />
                         passionate about innovative solutions and <br />
                         continuously learning new technologies.
                     </p>
