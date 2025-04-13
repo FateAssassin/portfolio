@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import todo from '../assets/projects/todo.png';
-import reconnect from '../assets/projects/reconnect.png';
+import reconbots from '../assets/projects/reconbots.jpg';
 import github from '../assets/projects/github.jpg';
 
 const ProjectCard = ({ project, onSelect }) => (
@@ -93,13 +93,13 @@ const Projects = () => {
             repoLink: 'https://to-do-app-ten-beige.vercel.app/',
         },
         {
-            name: 'Reconnect',
+            name: 'Recon-Bots',
             description:
-                'Reconnect offers a wide range of services on Discord. This includes a Discord-Bot and a Discord-Server. The designs of the services are modern and user-friendly. The services are also easy to use, understand, and the prices are fair.',
+                'Recon-Bots offers a wide range of services on Discord. This includes a Discord-Bot and a Discord-Server. The designs of the services are modern and user-friendly. The services are also easy to use, understand, and the prices are fair.',
             shortDescription: 'Provides a wide range of services on Discord.',
-            image: reconnect,
+            image: reconbots,
             buttonText: 'Learn more',
-            repoLink: 'https://discord.gg/NpAU73vCFz',
+            repoLink: 'https://discord.gg/CA8YdbdAzd',
         },
         {
             name: 'GitHub Profile',
