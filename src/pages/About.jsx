@@ -19,7 +19,7 @@ export default function About() {
                     <div>
                         <p className="text-4xl font-bold text-blue-800 dark:text-blue-300 hidden md:block">About Me</p>
                         <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-                            My name is Muaz, I'm 19 years old, and I am a programmer based in Austria.
+                            My name is Muaz, I'm 19 years old, and I am a programmer based in Austria, Innsbruck.
                             I specialize in web development and automation. Besides coding, I'm passionate
                             about learning new technologies and taking on new challenges in the tech world.
                         </p>
