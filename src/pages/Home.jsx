@@ -17,7 +17,7 @@ export default function Home() {
                     </header>
                     <p className="mb-6 text-sm md:text-base">
                         Aspiring 19-year-old developer and student based in Austria and I am<br />
-                        passionate about innovative solutions and <br />
+                        passionate about innovative solutionsss and <br />
                         continuously learning new technologies.
                     </p>
                     <nav className="block sd:flex text-[16px] md:text-[20px] font-semibold space-y-4 md:space-y-0 md:space-x-4">
