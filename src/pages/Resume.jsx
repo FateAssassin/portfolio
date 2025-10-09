@@ -11,7 +11,7 @@ const Resume = () => {
                     type='application/pdf'
                 >
                     This browser does not support PDFs. Please download the PDF to view it: 
-                    <a href={resume}>Download PDF - File</a>
+                    <a href={resume}>Download PDF</a>
                 </iframe>
             </div>
         </div>
