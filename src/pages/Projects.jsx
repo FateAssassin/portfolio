@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import todo from '../assets/projects/todo.png';
 import reconbots from '../assets/projects/reconbots.jpg';
 import github from '../assets/projects/github.jpg';
+import devtools from '../assets/projects/devtools.png';
 
 const ProjectCard = ({ project, onSelect }) => (
     <motion.li
@@ -102,6 +103,15 @@ const Projects = () => {
             repoLink: 'https://discord.gg/CA8YdbdAzd',
         },
         {
+            name: 'Personal Dev-Tools',
+            description:
+                'Developer Tools is a custom-built web application designed to make my Discord bot development process faster and more efficient. It includes utilities such as an Embed Builder for creating Discord message embeds visually, and a Text-to-Python String Converter that transforms regular text into properly formatted Python strings. I built it to streamline everyday development tasks and make it easier to share formatted content or messages with clients and collaborators.',
+            shortDescription: 'A set of handy web tools to simplify my Discord bot development and freelancing workflow.',
+            image: devtools,
+            buttonText: 'View Tools',
+            repoLink: 'https://dev.muazugur.com'
+        },
+        {
             name: 'GitHub Profile',
             description:
                 'You may see more of my projects on my GitHub profile. Feel free to explore and contribute!',
@@ -114,7 +124,7 @@ const Projects = () => {
     const [selectedProject, setSelectedProject] = useState(null);
 
     return (
-        <div className="min-h-screen flex justify-center items-center py-12 px-4 sm:px-6 lg:px-8 fadeIn">
+        <div className="mt-12 min-h-screen flex justify-center items-center py-12 px-4 sm:px-6 lg:px-8 fadeIn">
             <div className="max-w-7xl">
                 <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
