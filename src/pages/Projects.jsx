@@ -91,7 +91,7 @@ const Projects = () => {
                 'A selfmade To-Do List App using React and local storage.',
             image: todo,
             buttonText: 'View Project',
-            repoLink: 'https://to-do-app-ten-beige.vercel.app/',
+            repoLink: 'https://to-do-app-lovat-five.vercel.app/',
         },
         {
             name: 'Recon-Bots',
