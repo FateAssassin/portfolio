@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Analytics } from "@vercel/analytics/react";

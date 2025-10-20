@@ -5,6 +5,9 @@ import reconbots from '../assets/projects/reconbots.jpg';
 import github from '../assets/projects/github.jpg';
 import devtools from '../assets/projects/devtools.png';
 
+import { FaReact, FaPython, FaDiscord, FaJsSquare } from 'react-icons/fa';
+import { SiTailwindcss } from 'react-icons/si';
+
 const ProjectCard = ({ project, onSelect }) => (
     <motion.li
         whileHover={{ scale: 1.02 }}
@@ -32,6 +35,35 @@ const ProjectCard = ({ project, onSelect }) => (
         </button>
     </motion.li>
 );
+
+const TechBadge = ({ tech }) => {
+    const iconSize = 18;
+
+    const icons = {
+        React: <FaReact size={iconSize} className="mr-2" />,
+        JavaScript: <FaJsSquare size={iconSize} className="mr-2" />,
+        TailwindCSS: <SiTailwindcss size={iconSize} className="mr-2" />,
+        Python: <FaPython size={iconSize} className="mr-2" />,
+        'Discord.py': <FaDiscord size={iconSize} className="mr-2" />,
+    };
+
+    const colors = {
+        React: 'bg-blue-500',
+        JavaScript: 'bg-yellow-500',
+        TailwindCSS: 'bg-teal-500',
+        Python: 'bg-blue-700',
+        'Discord.py': 'bg-indigo-500',
+    };
+
+    return (
+        <span
+            className={`cursor-default inline-flex items-center text-white px-3 py-1 rounded-lg text-sm font-medium mr-2 mb-2 ${colors[tech]} transform transition-transform duration-150 hover:scale-110`}
+        >
+            {icons[tech]}
+            {tech}
+        </span>
+    );
+};
 
 const ProjectModal = ({ project, onClose }) => (
     <motion.div
@@ -64,9 +96,17 @@ const ProjectModal = ({ project, onClose }) => (
                 alt={project.name}
                 className="w-full h-64 object-cover rounded-md mb-6"
             />
-            <p className="text-gray-700 dark:text-gray-300 mb-6">
+            <p className="text-gray-700 dark:text-gray-300 mb-4">
                 {project.description}
             </p>
+            {project.stack && (
+                <div className="mb-6">
+                    {project.stack.map((tech) => (
+                        <TechBadge tech={tech} />
+                    ))}
+                    
+                </div>
+            )}
             {project.repoLink && (
                 <a
                     href={project.repoLink}
@@ -86,12 +126,13 @@ const Projects = () => {
         {
             name: 'To-Do List App',
             description:
-                'My selfmade To-Do List App using React has a simple and clean design. It allows you to add and delete tasks. The To-Do List is stored in the local storage of your browser and therefore reduces loading time.',
+                'My selfmade To-Do List App using React has a simple and clean design. It allows you to add, edit, complete and delete tasks. The To-Do List is stored in the local storage of your browser and therefore reduces loading time.',
             shortDescription:
                 'A selfmade To-Do List App using React and local storage.',
             image: todo,
             buttonText: 'View Project',
             repoLink: 'https://to-do-app-lovat-five.vercel.app/',
+            stack: ['React', 'JavaScript', 'TailwindCSS'],
         },
         {
             name: 'Recon-Bots',
@@ -101,6 +142,7 @@ const Projects = () => {
             image: reconbots,
             buttonText: 'Learn more',
             repoLink: 'https://discord.gg/CA8YdbdAzd',
+            stack: ['Python', 'Discord.py'],
         },
         {
             name: 'Personal Dev-Tools',
@@ -109,7 +151,8 @@ const Projects = () => {
             shortDescription: 'A set of handy web tools to simplify my Discord bot development and freelancing workflow.',
             image: devtools,
             buttonText: 'View Tools',
-            repoLink: 'https://dev.muazugur.com'
+            repoLink: 'https://dev.muazugur.com',
+            stack: ['React', 'JavaScript', 'TailwindCSS', 'Python'],
         },
         {
             name: 'GitHub Profile',
