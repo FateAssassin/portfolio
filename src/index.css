@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@custom-variant hover (&:hover);
 
 body {
   margin: 0;
