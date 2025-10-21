@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
-        <main className="flex flex-col md:flex-row items-center justify-center h-screen w-screen md:pt-16 fadeIn z-10 relative">
+        <main className="flex flex-col md:flex-row items-center justify-center h-screen w-screen md:pt-16 fadeIn z-10 relative ">
             
             <div className="absolute inset-0 bg-gray-100 dark:bg-gray-900 z-0 md:hidden"></div>
             

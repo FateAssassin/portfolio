@@ -100,11 +100,11 @@ export default function Contact() {
 
                     <div className="w-full md:w-1/2">
                         <form className="flex flex-col space-y-4 text-black" onSubmit={handleSubmit(onSubmit)}>
-                            <input type="text" placeholder="Name" {...register("name", { required: true })} className="p-2 rounded-lg border border-gray-300 dark:border-gray-700" />
+                            <input type="text" placeholder="Name" {...register("name", { required: true })} className="text-gray-400 p-2 rounded-lg border border-gray-300 dark:border-gray-700" />
                             {errors.name && <span className="text-red-500 leading-[1px]">Name is required</span>}
-                            <input type="email" placeholder="Email" {...register("email", { required: true })} className="p-2 rounded-lg border border-gray-300 dark:border-gray-700" />
+                            <input type="email" placeholder="Email" {...register("email", { required: true })} className="text-gray-400 p-2 rounded-lg border border-gray-300 dark:border-gray-700" />
                             {errors.email && <span className="text-red-500 leading-[1px]">Email is required</span>}
-                            <textarea placeholder="Message" {...register("message", { required: true })} className="p-2 rounded-lg border border-gray-300 dark:border-gray-700"></textarea>
+                            <textarea placeholder="Message" {...register("message", { required: true })} className="text-gray-400 p-2 rounded-lg border border-gray-300 dark:border-gray-700"></textarea>
                             {errors.message && <span className="text-red-500 leading-[1px]">Message is required</span>}
                             <button type="submit" className="p-2 rounded-lg bg-blue-600 text-white hover:opacity-90 transition-opacity">Send</button>
                         </form>

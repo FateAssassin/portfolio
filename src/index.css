@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 @custom-variant hover (&:hover);
+@custom-variant dark (&:where(.dark, .dark *));
 
+button{
+  cursor: pointer;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
