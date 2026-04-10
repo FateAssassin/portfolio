@@ -5,6 +5,8 @@ import NavBar from './pages/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Work from './pages/Work';
+import Zen from './pages/work/zen';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import PageNotFound from './pages/PageNotFound';
@@ -24,6 +26,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/work/zen" element={<Zen />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<PageNotFound />} />

@@ -23,6 +23,7 @@ export default function NavBar() {
                 <Link to="/" className="p-3 text-xl hover:text-black/50 duration-200 dark:hover:text-white/50">Home</Link>
                 <Link to="/about" className="p-3 text-xl hover:text-black/50 duration-200 dark:hover:text-white/50">About</Link>
                 <Link to="/projects" className="p-3 text-xl hover:text-black/50 duration-200 dark:hover:text-white/50">Projects</Link>
+                <Link to="/work" className="p-3 text-xl hover:text-black/50 duration-200 dark:hover:text-white/50">Work</Link>
                 <Link to="/resume" className="p-3 text-xl hover:text-black/50 duration-200 dark:hover:text-white/50">Resume</Link>
             </div>
 
@@ -51,6 +52,7 @@ export default function NavBar() {
                         <Link to="/" className="p-3 text-lg hover:text-black dark:hover:text-white transition-colors duration-200">Home</Link>
                         <Link to="/about" className="p-3 text-lg hover:text-black dark:hover:text-white transition-colors duration-200">About</Link>
                         <Link to="/projects" className="p-3 text-lg hover:text-black dark:hover:text-white transition-colors duration-200">Projects</Link>
+                        <Link to="/work" className="p-3 text-xl hover:text-black/50 duration-200 dark:hover:text-white/50">Work</Link>
                         <Link to="/resume" className="p-3 text-lg hover:text-black dark:hover:text-white transition-colors duration-200">Resume</Link>
                         <div className="text-center mt-4">
                             <Link to="/contact" className="relative inline-block px-6 py-2 border-2 border-black/60 dark:border-white/60 hover:text-white font-semibold overflow-hidden group transition-all duration-300">
