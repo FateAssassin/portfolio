@@ -4,6 +4,7 @@ import todo from '../assets/projects/todo.png';
 import reconbots from '../assets/projects/reconbots.jpg';
 import github from '../assets/projects/github.jpg';
 import devtools from '../assets/projects/devtools.png';
+import focusroom from '../assets/projects/focusroom.png';
 
 import { FaReact, FaPython, FaDiscord, FaJsSquare } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
@@ -153,6 +154,16 @@ const Projects = () => {
             buttonText: 'View Tools',
             repoLink: 'https://dev.muazugur.com',
             stack: ['React', 'JavaScript', 'TailwindCSS', 'Python'],
+        },
+        {
+            name: "FocusRoom",
+            description:
+                "FocusRoom is a platform designed for students to create and join virtual study rooms. It provides a distraction-free environment where users can focus on their work while being part of a community. The platform includes features such as Pomodoro timers, and real-time chat to enhance productivity and collaboration among students.",
+            shortDescription: "A platform for students to create and join virtual study rooms.",    
+            image: focusroom,
+            buttonText: 'Visit FocusRoom',
+            repoLink: 'https://focusroom.study/',
+            stack: ['React', 'JavaScript', 'TailwindCSS'],
         },
         {
             name: 'GitHub Profile',
